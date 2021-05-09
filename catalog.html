@@ -27,7 +27,7 @@
                     </div>
                     <div class="header__top-icons-right">
                         <a class="header__top-menu" href="#menu">
-                            <img src="img/menu.svg" alt="menu">
+                            <img id='menuimg' src="img/menu.svg" alt="menu">
                         </a>
                         <a class="header__top-profile" href="#">
                             <img src="img/profile.svg" alt="profile">
@@ -59,19 +59,68 @@
         <div class="container">
             <div class="catalog__filter">
                 <div class="catalog__filter-categories">
-                    <span>FILTER</span>
-                    <img src="img/filter.svg" alt="">
+                    <span class="catalog__filter-categories__filter1">FILTER</span>
+                    <img class="catalog__filter-categories__img" src="img/filter.svg" alt="">
+                    <div class="catalog__filter-categories__menulist">
+                        <span class="catalog__filter-categories__filter" id="activeFilter">FILTER</span>
+                        <img class="catalog__filter-categories__img" src="img/activefilter.svg" alt="">
+                        <div class="catalog__filter-categories__menulist-category">CATEGORY
+                        </div>
+                        <div class="catalog__filter-categories__menulist-links" id="categoryLinks">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                        <div class="catalog__filter-categories__menulist-category">BRAND
+                        </div>
+                        <div class="catalog__filter-categories__menulist-links" id="brandLinks">
+                            <a href="#">Adidas</a>
+                            <a href="#">Nike</a>
+                            <a href="#">MILANA</a>
+                            <a href="#">Armani</a>
+                            <a href="#">Lacoste</a>
+                        </div>
+                        <div class="catalog__filter-categories__menulist-category">DESIGNER
+                        </div>
+                        <div class="catalog__filter-categories__menulist-links" id="designerLinks">
+                            <a href="#">Ivanov Ivan</a>
+                            <a href="#">Magomedov Magomed</a>
+                            <a href="#">John Jones</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="catalog__filter-sorting">
                     <div class="catalog__filter-sorting__trend">
                         TRENDING NOW
                         <img src="img/str.svg" alt="str">
                     </div>
-                    <div class="catalog__filter-sorting__trend">
+                    <div class="catalog__filter-sorting__size">
                         SIZE
                         <img src="img/str.svg" alt="str">
+                        <div id="size">
+                            <div class="sizeWrap">
+                                <input type="checkbox" name="XS" id="sizebox">XS
+                            </div>
+                            <div class="sizeWrap">
+                                <input type="checkbox" name="S" id="sizebox">S
+                            </div>
+                            <div class="sizeWrap">
+                                <input type="checkbox" name="M" id="sizebox">M
+                            </div>
+                            <div class="sizeWrap">
+                                <input type="checkbox" name="L" id="sizebox">L
+                            </div>
+                        </div>
                     </div>
-                    <div class="catalog__filter-sorting__trend">
+                    <div class="catalog__filter-sorting__price">
                         PRICE
                         <img src="img/str.svg" alt="str">
                     </div>
@@ -189,6 +238,16 @@
             </div>
         </div>
     </main>
+    <nav class="pagination">
+        <a href="#"><img src="img/left.svg" alt=""></a>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">6 ... 20</a>
+        <a href="#"><img src="img/right.svg" alt=""></a>
+    </nav>
     <section class="advantages">
         <div class="container">
             <div class="advantages__list">

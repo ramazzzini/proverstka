@@ -31,6 +31,7 @@ li{
     &__top-icons{
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
     &__top-logo{
         padding: 18px 41px 18px 0;
@@ -388,7 +389,7 @@ li{
     width: 232px;
     height: 765px;
     background-color: #FFFFFF;
-    position: fixed;
+    position: absolute;
     left: 1368px;
     top: 75px;
     opacity: 0;
@@ -439,6 +440,57 @@ li{
         line-height: 17px;
         color: #000000;
         margin-right: 304px;
+        position: relative;
+        #activeFilter{
+            font-family: 'Lato', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #EF5B70;
+        }
+        &:hover &__menulist{
+            display: block;
+        }
+        &__menulist{
+            width: 360px;
+            min-height: 531px;
+            background: #FFFFFF;
+            box-shadow: 0 0 5px 5px #e7e6e6 ;
+            position: absolute;
+            left: -21px;
+            top: 0;
+            padding: 13px 16px 16px 16px;
+            z-index: 1;
+            display: none;
+        }
+        &__menulist-category{
+            font-family: 'Lato', sans-serif;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            margin-top: 16px;
+            padding-left: 11px;
+            line-height: 3;
+            border-left: 5px solid #EF5B70;
+            border-bottom: 1px solid transparent;
+            box-shadow: 0 0 1px 1px #f3f3f3;
+            cursor: pointer;
+        }
+        &__menulist-category:hover{
+            color: #EF5B70;
+        }
+        &__menulist-links{
+            margin: 24px 12px;
+        }
+        &__menulist-links a{
+            display: block;
+            padding-bottom: 11px ;
+            font-family: 'Lato',sans-serif;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+        }
     }
     &__filter-categories img{
         width: 15;
@@ -451,6 +503,13 @@ li{
         font-size: 14px;
         line-height: 17px;
         color: #6F6E6E;
+        &__size{
+            height: 25px;
+            position: relative;
+        }
+        &__size:hover #size{
+            display: block;
+        }
     }
     &__filter-sorting img{
         margin-left: 10px;
@@ -458,9 +517,46 @@ li{
     &__filter-sorting > div:not(:last-child){
         margin-right: 28px;
     }
+    #size{
+        display: flex;
+        flex-direction: column;
+        width: 79px;
+        height: 103px;
+        background: #FFFFFF;
+        box-shadow: 0 0 5px 5px #e7e6e6 ;
+        box-sizing: border-box;
+        top: 25px;
+        right: -5px;
+        position: absolute;
+        z-index: 1;
+        padding: 10px;
+        display: none;
+    }
+    #sizebox{
+        margin-right: 10px;
+    }
+}
+.pagination{
+    margin: 0 auto;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    width: 283px;
+    height: 43px;
+    margin-top: 47px;
+    margin-bottom: 96px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    & a{
+        font-family: "Lato", sans-serif;
+        color: #e2e1e1;
+    }
+    & a:hover{
+        color: #EF5B70;
+    }
 }
 
-@media (width: 1600px){
+@media (min-width: 1600px){
     #menu:target{
         opacity: 1;
         visibility: visible;
