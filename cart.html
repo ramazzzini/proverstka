@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<>
+    <header class="header">
+        <nav class="header__top">
+            <div class="container">
+                <div class="header__top-icons">
+                    <div class="header__top-icons-left">
+                        <a class="header__top-logo" href="index.html">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                        <a class="header__top-search" href="#">
+                            <img src="img/search.svg" alt="search">
+                        </a>
+                    </div>
+                    <div class="header__top-icons-right">
+                        <a class="header__top-menu" href="#menu">
+                            <img id='menuimg' src="img/menu.svg" alt="menu">
+                        </a>
+                        <a class="header__top-profile" href="#">
+                            <img src="img/profile.svg" alt="profile">
+                        </a>
+                        <a class="header__top-basket" href="#">
+                            <img src="img/basket.svg" alt="basket">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="header__bread">
+            <div class="container">
+                <div class="header__bread-items">
+                    <h1 class="header__bread-activePage">SHOPPING CART</h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="cart container">
+            <div class="cart__left">
+                <div class="cart__left-cards">
+                    <div class="cart__left-cards__card">
+                        <img src="img/cartimg1.png" alt="">
+                        <div class="cart__left-cards__card-information">
+                            <div class="cart__left-cards__card-information__header">
+                                <div>MANGO PEOPLE <br> T-SHIRT</div>
+                                <a class="cart__left-cards__card-infotmation__close" href="#"> <img src="img/close.svg"
+                                        alt="close"> </a>
+                            </div>
+                            <div class="cart__left-cards__card-information__info">
+                                <div class="cart__left-cards__card-information__info-item">Price: <span>$300</span>
+                                </div>
+                                <div class="cart__left-cards__card-information__info-item">Color: Red</div>
+                                <div class="cart__left-cards__card-information__info-item">Size: Xl </div>
+                                <div class="cart__left-cards__card-information__info-item">Quantity: <input type="text"
+                                        name="quantity" id="quantity"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__left-cards__card">
+                        <img src="img/cartimg2.png" alt="">
+                        <div class="cart__left-cards__card-information">
+                            <div class="cart__left-cards__card-information__header">
+                                <div>MANGO PEOPLE <br> T-SHIRT</div>
+                                <a class="cart__left-cards__card-infotmation__close" href="#"> <img src="img/close.svg"
+                                        alt="close"> </a>
+                            </div>
+                            <div class="cart__left-cards__card-information__info">
+                                <div class="cart__left-cards__card-information__info-item">Price: <span>$300</span>
+                                </div>
+                                <div class="cart__left-cards__card-information__info-item">Color: Red</div>
+                                <div class="cart__left-cards__card-information__info-item">Size: Xl </div>
+                                <div class="cart__left-cards__card-information__info-item">Quantity: <input type="text"
+                                        name="quantity" id="quantity"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__left-buttons">
+                    <div class="cart__left-buttons__btn">
+                        <a href="#">CLEAR SHOPPING CART</a>
+                    </div>
+                    <div class="cart__left-buttons__btn">
+                        <a href="#">CONTINUE SHOPPING</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__right">
+                <div class="cart__right-adress">
+                    <div class="cart__right-adress__header">SHIPPING ADRESS</div>
+                    <input class="cart__right-adress__input" type="text" name="country" id="country"
+                        placeholder="Bangladesh">
+                    <input class="cart__right-adress__input" type="text" name="state" id="state" placeholder="State">
+                    <input class="cart__right-adress__input" type="text" name="postcode" id="poctcode"
+                        placeholder="Postcode / Zip">
+                    <div class="cart__right-adress__btn">
+                        <a href="#">GET A QUOTE</a>
+                    </div>
+                </div>
+                <div class="cart__right-checkout">
+                    <div class="cart__right-checkout__subtotal">
+                        SUB TOTAL $900
+                    </div>
+                    <div class="cart__right-checkout__grandtotal">
+                        GRAND TOTAL <span>$900</span>
+                    </div>
+                    <hr>
+                    <div class="cart__right-checkout__btn">
+                        <a href="#">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__top-content">
+                    <div class="footer__top-content__quote">
+                        <img class="footer__top-content__quote-img" src="img/quote-img.png" alt="quote-img">
+                        <p class="footer__top-content__quote-text">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                            mi, a pulvinar purus condimentum“</p>
+                    </div>
+                    <div class="footer__top-content__subscribe">
+                        <div class="footer__top-content__subscribe-text">
+                            <span class="footer__top-content__subscribe-topword">SUBSCRIBE</span> <br>
+                            FOR OUR NEWLETTER AND PROMOTION
+                        </div>
+                        <div class="footer__top-content__subscribe-form">
+                            <input class="footer__top-content__subscribe-input" type="email"
+                                placeholder='Enter Your Email'>
+                            <div class="footer__top-content__subscribe-button">
+                                <a class="footer__top-content__subscribe-btn" href="#">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="container">
+                <div class="footer__copy-items">
+                    <div class="footer__copy-text">
+                        © 2021 Brand All Rights Reserved.
+                    </div>
+                    <div class="footer__copy-icons">
+                        <img class="footer__copy-icon" src="img/fb.svg" alt="fb">
+                        <img class="footer__copy-icon" src="img/ig.svg" alt="ig">
+                        <img class="footer__copy-icon" src="img/pt.svg" alt="pt">
+                        <img class="footer__copy-icon" src="img/tw.svg" alt="tw">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+
+</html>
