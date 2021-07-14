@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="header__top">
+        <div class="container">
+            <div class="header__top-icons">
+                <div class="header__top-icons-left">
+                    <a class="header__top-logo" href="index.html">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <a class="header__top-search" href="#">
+                        <img src="img/search.svg" alt="search">
+                    </a>
+                </div>
+                <div class="header__top-icons-right">
+                    <a class="header__top-menu" href="#menu">
+                        <img id='menuimg' src="img/menu.svg" alt="menu">
+                    </a>
+                    <a class="header__top-profile" href="#">
+                        <img src="img/profile.svg" alt="profile">
+                    </a>
+                    <a class="header__top-basket" href="cart.html">
+                        <img src="img/basket.svg" alt="basket">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="header__bread">
+        <div class="container">
+            <div class="header__bread-items">
+                <h1 class="header__bread-activePage">REGISTRATION</h1>
+    </nav>
+    </header>
+    <div class="registration container">
+        <form class="registration__left">
+            <div class="registration__left__name">
+                <p class="registration__left__name-txt">Your Name</p>
+                <input class="registration__left__name-input" type="text" placeholder="First Name">
+                <input class="registration__left__name-input" type="text" placeholder="Last Name">
+            </div>
+            <div class="registration__left__sex">
+                <input class="registration__left__sex-input" type="radio" id="male">
+                <label class="registration__left__sex-lab" for="male">
+                    <span>Male</span>
+                </label>
+                <input class="registration__left__sex-input" type="radio" id="female">
+                <label class="registration__left__sex-lab" for="female">
+                    <span>Female</span>
+                </label>
+            </div>
+            <div class="registration__left__login">
+                <input class="registration__left__login-email" type="email" placeholder="Email">
+                <input class="registration__left__login-pass" type="password" autofocus required pattern="\S+[А-яа-я]"
+                    placeholder="Password">
+                <p class="registration__left__info">Please use 8 or more characters, with at least 1 number and a
+                    mixture
+                    of uppercase and lowercase letters</p>
+            </div>
+            <button class="registration__left__btn">
+                <a href="#">JOIN NOW </a>
+            </button>
+        </form>
+        <div class="registration__right">
+            <h2 class="registration__right__header">LOYALTY HAS ITS PERKS</h2>
+            <p class="registration__right__txt">Get in on the loyalty program where you can earn points and unlock
+                serious
+                perks. Starting with these as soon as you join:</p>
+
+            <ul class="registration__right__list">
+                <li class="registration__right__list-item">15% off welcome offer</li>
+                <li class="registration__right__list-item">Free shipping, returns and exchanges on all order</li>
+                <li class="registration__right__list-item">$10 off a purchase on your birthday</li>
+                <li class="registration__right__list-item">Early access to products</li>
+                <li class="registration__right__list-item">Exclusive offers & rewards</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__top-content">
+                    <div class="footer__top-content__quote">
+                        <img class="footer__top-content__quote-img" src="img/quote-img.png" alt="quote-img">
+                        <p class="footer__top-content__quote-text">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                            mi, a pulvinar purus condimentum“</p>
+                    </div>
+                    <div class="footer__top-content__subscribe">
+                        <div class="footer__top-content__subscribe-text">
+                            <span class="footer__top-content__subscribe-topword">SUBSCRIBE</span> <br>
+                            FOR OUR NEWLETTER AND PROMOTION
+                        </div>
+                        <form class="footer__top-content__subscribe-form">
+                            <input class="footer__top-content__subscribe-input" type="text"
+                                placeholder='Enter Your Email'>
+                            <div class="footer__top-content__subscribe-button">
+                                <a href="#">Subscribe</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="container">
+                <div class="footer__copy-items">
+                    <div class="footer__copy-text">
+                        © 2021 Brand All Rights Reserved.
+                    </div>
+                    <div class="footer__copy-icons">
+                        <a href="#"><img class="footer__copy-icon" src="img/fb.svg" alt="fb"></a>
+                        <a href="#"><img class="footer__copy-icon" src="img/ig.svg" alt="ig"></a>
+                        <a href="#"><img class="footer__copy-icon" src="img/pt.svg" alt="pt"></a>
+                        <a href="#"><img class="footer__copy-icon" src="img/tw.svg" alt="tw"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
