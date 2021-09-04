@@ -62,6 +62,19 @@ li {
 
 .header__top-basket {
   padding: 26px 0 20px 33px;
+  position: relative;
+}
+
+.header__top-basket__count {
+  position: absolute;
+  background: #f16d7f;
+  width: 19px;
+  height: 19px;
+  text-align: center;
+  color: #ebebeb;
+  border-radius: 50%;
+  right: -1%;
+  top: 27%;
 }
 
 .header__content {
@@ -1461,6 +1474,9 @@ li {
     font-weight: 900;
     font-size: 38px;
     line-height: 45px;
+  }
+  .header__top-basket__count {
+    display: none;
   }
   .header__top-menu {
     padding-right: 0;
